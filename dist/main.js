@@ -48,13 +48,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const NavBar = () => {
   const homeButton = document.createElement("button");
+  homeButton.classList.add("home-btn");
   homeButton.textContent = "Home";
 
   const menuButton = document.createElement("button");
   menuButton.textContent = "Menu";
+  menuButton.classList.add("menu-btn");
 
   const aboutButton = document.createElement("button");
   aboutButton.textContent = "About";
+  aboutButton.classList.add("about-btn");
 
   const NavDiv = document.createElement("div");
   NavDiv.classList.add("nav-bar");
@@ -78,19 +81,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var _images_takahashi_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+
+const Home = () => {
+  const mainContentDiv = document.createElement("div");
+  mainContentDiv.classList.add("main-content");
+
+  const contentTitle = document.createElement("h2");
+  contentTitle.textContent = "Meet your Cook!";
+
+  const contentImg = document.createElement("img");
+  contentImg.src = _images_takahashi_jpg__WEBPACK_IMPORTED_MODULE_0__;
+
+  const contentP = document.createElement("p");
+  contentP.textContent =
+    "An unusual robotic chef, Takahashi has been operating Power Noodles at the center of Diamond City's market for fifteen years. He continuously stirs an unspecified substance in a stockpot. Takahashi is only able to say one thing, and according to a terminal in Mayor McDonough's office, this appears to be a malfunction. However, McDonough refuses to repair the robot because he believes it is a symbol of Diamond City's culture.";
+
+  mainContentDiv.appendChild(contentTitle);
+  mainContentDiv.appendChild(contentImg);
+  mainContentDiv.appendChild(contentP);
+
+  return mainContentDiv;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+
+/***/ }),
+/* 5 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(12);
 
       
       
@@ -121,7 +158,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ ((module) => {
 
 
@@ -230,7 +267,7 @@ module.exports = function (list, options) {
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ ((module) => {
 
 
@@ -305,7 +342,7 @@ function domAPI(options) {
 module.exports = domAPI;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ ((module) => {
 
 
@@ -349,7 +386,7 @@ function insertBySelector(insert, style) {
 module.exports = insertBySelector;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -366,7 +403,7 @@ function setAttributesWithoutAttributes(styleElement) {
 module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ ((module) => {
 
 
@@ -382,7 +419,7 @@ function insertStyleElement(options) {
 module.exports = insertStyleElement;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ ((module) => {
 
 
@@ -403,36 +440,38 @@ function styleTagTransform(css, styleElement) {
 module.exports = styleTagTransform;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(15), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(16), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(16), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(17), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(18), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Fallout\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: 100% 100%;\n}\n\n#content {\n  display: grid;\n  grid-template-columns: 1fr minmax(500px, 700px) 1fr;\n  grid-template-rows: repeat(10, 10%);\n  width: 100vw;\n  height: 100vh;\n}\n\n.title-container {\n  grid-column: 1 / 4;\n  grid-row: 1 / 2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: rgb(68, 122, 185, 0.9);\n}\n\n.vault-boy {\n  height: 110px;\n  width: 110px;\n}\n\n.title {\n  font-family: \"Fallout\";\n  align-self: flex-end;\n  font-size: 4rem;\n  color: #fef265;\n}\n\n.nav-bar {\n  z-index: 1;\n  grid-row: 2 / 3;\n  grid-column: 2 / 3;\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  justify-content: center;\n}\n\n.nav-bar button {\n  font-family: \"fallout\";\n  font-size: 2.5rem;\n  color: #325886;\n  padding: 5px 20px;\n  border: 5px solid #fce8a4;\n  background-color: #82a7d6;\n  cursor: pointer;\n}\n\n.nav-bar button:disabled {\n  border: 5px solid #fce265;\n  background-color: #325886;\n  color: #82a7d6;\n  cursor: default;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Fallout\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n@font-face {\n  font-family: \"monofonto\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  background-size: 100% 100%;\n}\n\n#content {\n  display: grid;\n  grid-template-columns: 1fr minmax(500px, 700px) 1fr;\n  grid-template-rows: repeat(10, 10%);\n  width: 100vw;\n  height: 100vh;\n}\n\n.title-container {\n  grid-column: 1 / 4;\n  grid-row: 1 / 2;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: rgb(68, 122, 185, 0.9);\n}\n\n.vault-boy {\n  height: 110px;\n  width: 110px;\n}\n\n.title {\n  font-family: \"Fallout\";\n  align-self: flex-end;\n  font-size: 4rem;\n  color: #fef265;\n}\n\n.nav-bar {\n  z-index: 1;\n  grid-row: 2 / 3;\n  grid-column: 2 / 3;\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  justify-content: center;\n}\n\n.nav-bar button {\n  font-family: \"fallout\";\n  font-size: 2.5rem;\n  color: #325886;\n  padding: 5px 20px;\n  border: 5px solid #fce8a4;\n  background-color: #82a7d6;\n  cursor: pointer;\n}\n\n.nav-bar button:disabled {\n  border: 5px solid #1bff80;\n  background-color: #325886;\n  color: #82a7d6;\n  cursor: default;\n}\n\n.main-content {\n  grid-column: 2 / 3;\n  grid-row: 3 / 10;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 20px;\n  padding: 20px;\n  background-color: rgb(0, 0, 0, 0.85);\n  color: #1bff80;\n  font-family: \"monofonto\";\n  border: 1px solid #1bff80;\n}\n\n.main-content > img {\n  width: 80%;\n  border: 2px solid #1bff80;\n}\n\n.main-content h2 {\n  font-size: 2.5rem;\n}\n\n.main-content p {\n  font-size: 1.4rem;\n}\n\n.price {\n  display: flex;\n  align-items: flex-end;\n  gap: 10px;\n  align-self: flex-start;\n}\n\n.price p {\n  align-self: center;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ ((module) => {
 
 
@@ -442,7 +481,7 @@ module.exports = function (i) {
 };
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ ((module) => {
 
 
@@ -549,7 +588,7 @@ module.exports = function (cssWithMappingToString) {
 };
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ ((module) => {
 
 
@@ -583,16 +622,137 @@ module.exports = function (url, options) {
 };
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "d9acce330e1eb13463aa.otf";
 
 /***/ }),
-/* 16 */
+/* 17 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "138cb33589c39f6523ca.otf";
+
+/***/ }),
+/* 18 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "c209c719579b6d16b741.jpg";
+
+/***/ }),
+/* 19 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "5cb4c156d8ab8da781d8.jpg";
+
+/***/ }),
+/* 20 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _images_Noodle_cup_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
+/* harmony import */ var _images_bottle_cap_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
+
+
+
+
+const Menu = () => {
+  const mainContentDiv = document.createElement("div");
+  mainContentDiv.classList.add("main-content");
+
+  const contentTitle = document.createElement("h2");
+  contentTitle.textContent = "Noodle Cup";
+
+  const contentImg = document.createElement("img");
+  contentImg.src = _images_Noodle_cup_jpg__WEBPACK_IMPORTED_MODULE_0__;
+
+  const contentP = document.createElement("p");
+  contentP.textContent =
+    "A cup holding some noodles. It heals a moderate amount of health. This is it. That's all we serve.";
+
+  const priceDiv = document.createElement("div");
+  priceDiv.classList.add("price");
+
+  const bottleCapImg = document.createElement("img");
+  bottleCapImg.src = _images_bottle_cap_png__WEBPACK_IMPORTED_MODULE_1__;
+
+  const priceP = document.createElement("p");
+  priceP.textContent = "55 Bottle Caps";
+
+  priceDiv.appendChild(bottleCapImg);
+  priceDiv.appendChild(priceP);
+
+  mainContentDiv.appendChild(contentTitle);
+  mainContentDiv.appendChild(contentImg);
+  mainContentDiv.appendChild(contentP);
+  mainContentDiv.appendChild(priceDiv);
+
+  return mainContentDiv;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Menu);
+
+
+/***/ }),
+/* 21 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "834e5d9a97f3b591b8ce.jpg";
+
+/***/ }),
+/* 22 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "915bf9fe2fe4a971e43b.png";
+
+/***/ }),
+/* 23 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _images_power_noodles_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+
+const About = () => {
+  const mainContentDiv = document.createElement("div");
+  mainContentDiv.classList.add("main-content");
+
+  const contentTitle = document.createElement("h2");
+  contentTitle.textContent = "About Us!";
+
+  const contentImg = document.createElement("img");
+  contentImg.src = _images_power_noodles_jpg__WEBPACK_IMPORTED_MODULE_0__;
+
+  const contentP = document.createElement("p");
+  contentP.textContent =
+    "Power Noodles is an unmarked location in the Diamond City market in 2287. It is operated by the Protectron Takahashi, and was founded in 2272.";
+
+  const contentExtraP = document.createElement("p");
+
+  contentExtraP.textContent =
+    "This structure directly opposite the city's main entrance in the center of the market is a small outdoor restaurant. Counters encircle a central pillar, with Takahashi behind one of them";
+
+  mainContentDiv.appendChild(contentTitle);
+  mainContentDiv.appendChild(contentImg);
+  mainContentDiv.appendChild(contentP);
+  mainContentDiv.appendChild(contentExtraP);
+
+  return mainContentDiv;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+
+/***/ }),
+/* 24 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "bca361a1d7cf9d4cdc8d.jpg";
 
 /***/ })
 /******/ 	]);
@@ -735,19 +895,63 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20);
+/* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5);
+
+
+
 
 
 
 
 const contentDiv = document.getElementById("content");
 
+//helper functions
 function appendToContentDiv(element) {
   contentDiv.appendChild(element);
 }
 
+function removeMainContentDiv() {
+  const mainContentDiv = document.querySelector(".main-content");
+  mainContentDiv.remove();
+}
+
+function loadTab(target, className, content) {
+  if (target.disabled === true) return;
+  const buttons = [...document.querySelector(".nav-bar").childNodes];
+  buttons.forEach((button) => {
+    if (!button.classList.contains(className)) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  });
+  removeMainContentDiv();
+  appendToContentDiv(content());
+}
+
+//Initial Load
 appendToContentDiv((0,_components_Title__WEBPACK_IMPORTED_MODULE_0__["default"])());
 appendToContentDiv((0,_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"])());
+const homeButton = document.querySelector(".home-btn");
+homeButton.disabled = true;
+
+appendToContentDiv((0,_components_Home__WEBPACK_IMPORTED_MODULE_2__["default"])());
+
+//Event Listeners with event delegation
+
+const body = document.querySelector("body");
+
+body.addEventListener("click", (e) => {
+  if (e.target.classList.contains("home-btn"))
+    return loadTab(e.target, "home-btn", _components_Home__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  if (e.target.classList.contains("menu-btn"))
+    return loadTab(e.target, "menu-btn", _components_Menu__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  if (e.target.classList.contains("about-btn"))
+    return loadTab(e.target, "about-btn", _components_About__WEBPACK_IMPORTED_MODULE_4__["default"]);
+});
 
 })();
 

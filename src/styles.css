@@ -3,6 +3,11 @@
   src: url("./fonts/overseer-bold.otf");
 }
 
+@font-face {
+  font-family: "monofonto";
+  src: url("./fonts/monofonto\ rg.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -63,8 +68,46 @@ body {
 }
 
 .nav-bar button:disabled {
-  border: 5px solid #fce265;
+  border: 5px solid #1bff80;
   background-color: #325886;
   color: #82a7d6;
   cursor: default;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+  grid-row: 3 / 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0, 0.85);
+  color: #1bff80;
+  font-family: "monofonto";
+  border: 1px solid #1bff80;
+}
+
+.main-content > img {
+  width: 80%;
+  border: 2px solid #1bff80;
+}
+
+.main-content h2 {
+  font-size: 2.5rem;
+}
+
+.main-content p {
+  font-size: 1.4rem;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.price p {
+  align-self: center;
 }
